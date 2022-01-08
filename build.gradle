@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.0.0' apply false
+    id 'org.jetbrains.gradle.plugin.idea-ext' version '1.0.1'
+}
+
+group 'ru.bortexel'
+version '1.0'
+
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    group = parent.group
+    version = parent.version
+
+    apply plugin: 'java-library'
+    apply plugin: 'maven-publish'
+
+    dependencies {
+        implementation 'org.jetbrains:annotations:16.0.2'
+    }
+}

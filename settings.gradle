@@ -1,0 +1,2 @@
+rootProject.name = 'styled-chat'
+include 'styled-chat-api', 'styled-chat-spigot'
