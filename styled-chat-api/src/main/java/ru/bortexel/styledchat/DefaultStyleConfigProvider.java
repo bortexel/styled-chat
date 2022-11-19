@@ -17,6 +17,11 @@ public class DefaultStyleConfigProvider implements IStyleConfigProvider {
 
     @Override
     public Optional<String> getStyleByName(String styleName) {
-        return Optional.empty();
+        return switch (styleName) {
+            case "integer", "double" -> Optional.of("<value>");
+            case "primary", "secondary" -> Optional.of("<string>");
+            case "command" -> Optional.of("/<command> <args>");
+            default -> Optional.of("<unknown>");
+        };
     }
 }

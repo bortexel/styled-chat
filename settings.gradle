@@ -1,2 +1,12 @@
+pluginManagement {
+    repositories {
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        gradlePluginPortal()
+    }
+}
+
 rootProject.name = 'styled-chat'
-include 'styled-chat-api', 'styled-chat-spigot'
+include 'styled-chat-api', 'styled-chat-spigot', 'styled-chat-fabric'

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "styled-chat",
+  "version": "${version}",
+  "name": "Styled Chat",
+  "description": "",
+  "authors": ["RuscalWorld"],
+  "contact": {
+    "email": "me@ruscal.world",
+    "sources": "https://github.com/bortexel/styled-chat",
+    "issues": "https://github.com/bortexel/styled-chat/issues"
+  },
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "ru.bortexel.styledchat.StyledChatFabric"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*"
+  }
+}
