@@ -1,6 +1,0 @@
-name: StyledChat
-version: '${version}'
-main: ru.ruscalworld.styledchat.StyledChatSpigot
-api-version: 1.18
-authors: [ RuscalWorld ]
-description: Plugin for configuring generic styles of server's chat

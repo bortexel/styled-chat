@@ -1,0 +1,6 @@
+name: Stylish
+version: '${version}'
+main: ru.bortexel.stylish.StylishSpigot
+api-version: 1.18
+authors: [ RuscalWorld ]
+description: Plugin for configuring generic styles of server's chat

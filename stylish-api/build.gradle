@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+repositories {
+    maven {
+        name = "sonatype-oss-snapshots"
+        url = "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
+
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'net.kyori:adventure-api:4.11.0'
+    implementation 'net.kyori:adventure-text-minimessage:4.11.0'
+}
+
+publishing {
+    publications {
+        action(MavenPublication) {
+            groupId = 'ru.bortexel'
+            artifactId = 'stylish-api'
+            version = version
+
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url = 'https://maven.ruscal.world/releases'
+            credentials {
+                username = System.getenv("USERNAME") == null ? MavenReleasesUsername : System.getenv("USERNAME")
+                password = System.getenv("PASSWORD") == null ? MavenReleasesPassword : System.getenv("PASSWORD")
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "stylish",
+  "version": "${version}",
+  "name": "Styled Chat",
+  "description": "",
+  "authors": ["RuscalWorld"],
+  "contact": {
+    "email": "me@ruscal.world",
+    "sources": "https://github.com/bortexel/stylish",
+    "issues": "https://github.com/bortexel/stylish/issues"
+  },
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "ru.bortexel.stylish.StylishFabric"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*"
+  }
+}

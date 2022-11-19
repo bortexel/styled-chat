@@ -8,5 +8,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'styled-chat'
-include 'styled-chat-api', 'styled-chat-spigot', 'styled-chat-fabric'
+rootProject.name = 'stylish'
+include 'stylish-api', 'stylish-spigot', 'stylish-fabric'
